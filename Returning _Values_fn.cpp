@@ -35,8 +35,8 @@ string ReturnString(string x, string y) { //string function
 }
 
 int main() { //int function
-  cout << ReturnInt(1, 2) <<endl;
-  cout << ReturnDouble(1, 2) <<endl;
-  cout << ReturnString("1", "2") << endl;
+  cout<< ReturnInt(1, 2) <<endl;
+  cout<< ReturnDouble(1, 2) <<endl;
+  cout<< ReturnString("1", "2") << endl;
   return 0;
 }
