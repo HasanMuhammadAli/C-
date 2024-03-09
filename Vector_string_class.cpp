@@ -13,11 +13,17 @@ class Meal {
         cout << a << endl;
       }
     }
+    void Add_desert(string dessert) {
+      desserts.push_back(dessert);
+    }
+    void Print_desert() {
+      for (auto a: desserts) {
+        cout << a << endl;
+      }
+    }
   
   private:
     vector<string> drinks;
-    vector<string> appetizers;
-    vector<string> main_courses;
     vector<string> desserts;
 };
 
@@ -25,5 +31,7 @@ int main(){
     Meal dinner;
     dinner.AddDrink("water");
     dinner.PrintDrinks();
+    dinner.Add_desert("Chicken");
+    dinner.Print_desert();
     return 0;
 }
